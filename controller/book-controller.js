@@ -19,7 +19,13 @@ const getById = (req, res) => {
   if (!book) res.status(404).send('The book with the given ID was not found.');
   res.json(book);
 }
-
+// get book by categoryId, Request Method: Get
+const getByCategoryId = (req, res) => {
+  let data = CategoryId.categoryById;
+  // //let book = books.find(category => category.id === parseInt(req.params.id));
+  // if (!data) res.status(404).send('The book with the given category ID was not found.');
+  // res.json(data);
+}
 
 //update book
 const update = (req, res) => {
@@ -63,6 +69,7 @@ module.exports = {
   save,
   getAllBook,
   getById,
+  getByCategoryId,
   update,
   deleteBook,
 };

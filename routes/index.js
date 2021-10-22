@@ -12,7 +12,7 @@ router.post("/books", BookController.save);
 // get user by id, Request Method: Get
 router.get("/books/:id", BookController.getById);
 
-router.get("/books/category/:id", BookController.getByCategoryId);
+router.get("/books/categories/:id", BookController.getByCategoryId);
 
 router.put("/books/:id", BookController.update);
 
